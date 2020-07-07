@@ -16,4 +16,12 @@ public abstract class Duck{
     public void doQuack(){
         iVoice.quack();
     }
+
+    public void setiVoice(IVoice iVoice){ //method for runtime voice change
+        this.iVoice = iVoice;
+    }
+
+    public void setiFlying(IFlying iFlying){ //method for runtime flying style change
+        this.iFlying = iFlying;
+    }
 }
